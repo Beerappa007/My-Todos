@@ -1,0 +1,181 @@
+/* App.css */
+
+body {
+  background-color: #1f1e1e;
+  color: white;
+  overflow: hidden;
+  margin: 0; /* Add margin reset */
+  font-family: Arial, sans-serif; /* Add font family */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px; /* Add margin top */
+}
+
+.todo-list {
+  background-color: #353434;
+  padding: 2%;
+  width: 90%; /* Adjust width to 90% of the viewport */
+  max-width: 600px; /* Set max-width for larger screens */
+  margin: 3% auto; /* Center the todo list */
+  max-height: 80vh; /* Added max height */
+  overflow-y: auto; /* Added overflow property */
+  box-shadow: 0px 5px 7px rgb(225, 214, 47);
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  border-bottom: 1px solid yellowgreen;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.todo-input-item {
+  margin-right: 0; /* Remove right margin */
+}
+
+.todo-input-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.todo-input-item input {
+  padding: 8px;
+  border: none;
+  border-radius: 7px; /* Add border radius */
+  margin-bottom: 15px; /* Add margin bottom */
+}
+
+.btn {
+  background-color: rgba(226, 216, 68, 0.977);
+  color: white;
+  border: none;
+  border-radius: 95px;
+  margin-top: 25px;
+  padding: 10px;
+  width: 40%; /* Adjust width to 30% */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(166, 255, 0, 0.977);
+}
+
+.secondaryBtn {
+  background-color: rgba(62, 61, 46, 0.977);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 25px;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgba(226, 216, 68, 0.977);
+}
+
+.tolist {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-area {
+  margin-bottom: 15px;
+}
+
+.list {
+  background-color: #414040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 5px rgb(43, 42, 42);
+}
+
+.list h3 {
+  font-size: 25px;
+  color: rgb(225, 214, 47);
+  font-weight: bold;
+  margin: 0px;
+}
+
+.list p {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  margin-top: 8px;
+}
+
+.icon {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.check-icon {
+  font-size: 30px;
+  margin-left: 10px;
+  color: rgb(0, 230, 122);
+  cursor: pointer;
+}
+
+.check-icon:hover {
+  color: darkgreen;
+}
+
+.edit {
+  background-color: #414040;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit input,
+.edit textarea {
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.edit .btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for tablets and smaller devices */
+  .todo-input-item {
+    width: 100%; /* Set width to 100% for smaller screens */
+    margin-right: 0; /* Remove right margin */
+    border-radius: 7px; /* Add border radius */
+  }
+
+  .btn {
+    width: 50%;
+     /* Adjust width to 50% for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  .todo-list {
+    width: 95%; /* Adjust width to 95% */
+  }
+
+  .btn {
+    width: 70%; /* Adjust width to 70% */
+  }
+}
